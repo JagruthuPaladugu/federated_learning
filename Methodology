@@ -1,0 +1,20 @@
+Methodology
+The proposed system follows these steps:
+Step 1: Collect Healthcare Data
+Use a suitable healthcare dataset containing patient information such as age, blood pressure, cholesterol, and other medical features.
+Step 2: Data Preprocessing
+Clean missing values, remove unnecessary data, convert categorical values into numerical values, and prepare the dataset for ML training.
+Step 3: Simulate Multiple Hospitals
+Divide the dataset into different parts and treat them as data belonging to Hospital A, Hospital B, and Hospital C.
+Step 4: Local ML Training
+Each hospital trains the ML model using only its own local data.
+Step 5: Send Model Updates
+Hospitals send model updates to the central server instead of sending raw patient data.
+Step 6: Federated Aggregation
+The central server combines the updates using Federated Averaging (FedAvg) to create a global model.
+Step 7: Global Model
+The improved global model is sent back to the hospitals, and the training process can be repeated for multiple rounds.
+Step 8: Prediction
+The global model predicts the health risk for new patient data.
+Step 9: Explainable AI
+SHAP or LIME is used to identify the important factors that influenced the prediction.
