@@ -1,0 +1,7 @@
+numpy
+pandas
+scikit-learn
+matplotlib
+
+# Optional (only if you want to swap in real SHAP plots — see explainability.py notes):
+# shap
