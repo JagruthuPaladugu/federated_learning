@@ -18,7 +18,7 @@ from sklearn.metrics import (
 )
 
 
-df = pd.read_csv("heart_disease_uci.csv")
+df = pd.read_csv("federated_learning/heart_disease_uci.csv")
 
 print("\nFirst 5 rows:")
 print(df.head())
